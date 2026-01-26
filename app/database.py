@@ -1,6 +1,4 @@
-"""
-Konfiguracja i setup bazy danych SQLite.
-"""
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session
 from models import Base

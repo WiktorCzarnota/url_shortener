@@ -45,23 +45,35 @@ url_shortener/
 
 ### Sposób 1: Standardowa instalacja
 
+### Sposób 1: Standardowa instalacja
+
 1. Sklonuj repozytorium:
 ```bash
-git clone <url-repozytorium>
+git clone <https://github.com/WiktorCzarnota/url_shortener.git>
 cd url_shortener
 ```
 
-2. Zainstaluj zależności:
+2. Utwórz środowisko wirtualne (zalecane, można ominąć):
+```bash
+python -m venv venv
+source venv/Scripts/activate  # Windows Git Bash
+# lub
+venv\Scripts\activate.bat     # Windows CMD
+# lub
+source venv/bin/activate      # Linux/Mac
+```
+
+3. Zainstaluj zależności:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Uruchom aplikację:
+4. Uruchom aplikację:
 ```bash
 streamlit run app/main.py
 ```
 
-4. Otwórz przeglądarkę pod adresem: `http://localhost:8501`
+5. Otwórz przeglądarkę pod adresem: `http://localhost:8501`
 
 ### Sposób 2: Docker (zalecany)
 

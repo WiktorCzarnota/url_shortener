@@ -1,6 +1,4 @@
-"""
-Operacje CRUD (Create, Read, Update, Delete) na bazie danych.
-"""
+
 from typing import List, Optional
 from sqlalchemy.orm import Session
 from models import ShortURL

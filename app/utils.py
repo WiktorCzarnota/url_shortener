@@ -1,6 +1,4 @@
-"""
-Funkcje pomocnicze dla skracacza URL.
-"""
+
 import string
 import random
 from typing import Set

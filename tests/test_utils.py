@@ -1,6 +1,4 @@
-"""
-Testy jednostkowe dla modułu utils.
-"""
+
 import pytest
 import sys
 from pathlib import Path

@@ -1,6 +1,4 @@
-"""
-Główna aplikacja Streamlit dla skracacza URL.
-"""
+
 import streamlit as st
 from sqlalchemy.orm import Session
 from database import init_db, SessionLocal
