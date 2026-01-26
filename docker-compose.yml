@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  streamlit:
+    build: .
+    container_name: url_shortener
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./url_shortener.db:/app/url_shortener.db
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

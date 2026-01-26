@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "url-shortener"
+version = "1.0.0"
+description = "Prosty skracacz URL w Streamlit z bazą danych SQLite"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Student", email = "student@example.com"}
+]
+keywords = ["url", "shortener", "streamlit", "web"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "streamlit>=1.31.0",
+    "sqlalchemy>=2.0.25",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "flake8>=7.0.0",
+]
+
+[project.scripts]
+url-shortener = "app.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*", "tests*"]
