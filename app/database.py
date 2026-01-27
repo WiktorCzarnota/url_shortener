@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker, Session
 from models import Base
 
 # Ścieżka do pliku bazy danych SQLite
-DATABASE_URL = "sqlite:///./url_shortener.db"
+DATABASE_URL = "sqlite:////app/data/url_shortener.db"
 
 # Tworzenie silnika bazy danych
 engine = create_engine(

@@ -13,6 +13,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Kopiujemy cały projekt
 COPY . .
 
+# Tworzymy folder na bazę danych z uprawnieniami
+RUN mkdir -p /app/data && chmod 777 /app/data
+
 # Otwieramy port dla Streamlit
 EXPOSE 8501
 
