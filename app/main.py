@@ -146,9 +146,8 @@ def main() -> None:
 
     db.close()
 
-    # Stopka
     st.markdown("---")
-    st.markdown("Projekt wykonany w ramach kursu Podstawy Programowania w Pythonie")
+    st.markdown("Projekt wykonany w ramach zajęć Podstawy Programowania w Pythonie")
 
 
 if __name__ == "__main__":

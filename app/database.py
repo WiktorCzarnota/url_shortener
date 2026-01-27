@@ -15,15 +15,13 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
 def init_db() -> None:
-    """
-    Inicjalizuje bazę danych, tworząc wszystkie tabele.
+    """Inicjalizuje bazę danych, tworząc wszystkie tabele.
     """
     Base.metadata.create_all(bind=engine)
 
 
 def get_db() -> Session:
-    """
-    Generator zwracający sesję bazy danych.
+    """Generator zwracający sesję bazy danych.
     Zapewnia automatyczne zamknięcie sesji po użyciu.
 
     Yields:

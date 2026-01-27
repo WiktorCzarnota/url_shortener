@@ -19,8 +19,7 @@ from crud import (
 
 @pytest.fixture
 def test_db() -> Session:
-    """
-    Fixture tworzący tymczasową bazę danych w pamięci dla testów.
+    """Fixture tworzący tymczasową bazę danych w pamięci dla testów.
 
     Yields:
         Session: Sesja testowej bazy danych
@@ -158,8 +157,7 @@ class TestIncrementClickCount:
 
 
 def test_smoke_test(test_db: Session) -> None:
-    """
-    Test na dym - sprawdza podstawowy przepływ działania aplikacji.
+    """Test na dym - sprawdza podstawowy przepływ działania aplikacji.
     """
     # Tworzenie URL
     url1 = create_short_url(test_db, "https://example.com")

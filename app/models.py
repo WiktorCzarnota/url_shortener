@@ -6,8 +6,7 @@ Base = declarative_base()
 
 
 class ShortURL(Base):
-    """
-    Model reprezentujący skrócony URL w bazie danych.
+    """Model reprezentujący skrócony URL w bazie danych.
 
     Attributes:
         id (int): Unikalny identyfikator

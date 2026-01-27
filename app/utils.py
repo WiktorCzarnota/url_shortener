@@ -4,8 +4,7 @@ from typing import Set
 
 
 def generate_short_code(length: int = 6, existing_codes: Set[str] = None) -> str:
-    """
-    Generuje losowy krótki kod dla URL.
+    """Generuje losowy krótki kod dla URL.
 
     Args:
         length: Długość generowanego kodu (domyślnie 6)
@@ -32,8 +31,7 @@ def generate_short_code(length: int = 6, existing_codes: Set[str] = None) -> str
 
 
 def validate_url(url: str) -> bool:
-    """
-    Sprawdza, czy URL jest poprawny (prosta walidacja).
+    """Sprawdza, czy URL jest poprawny (prosta walidacja).
 
     Args:
         url: URL do walidacji

@@ -7,8 +7,7 @@ from utils import generate_short_code
 def create_short_url(
     db: Session, original_url: str, custom_code: Optional[str] = None
 ) -> ShortURL:
-    """
-    Tworzy nowy skrócony URL w bazie danych.
+    """Tworzy nowy skrócony URL w bazie danych.
 
     Args:
         db: Sesja bazy danych
@@ -43,8 +42,7 @@ def create_short_url(
 
 
 def get_url_by_code(db: Session, short_code: str) -> Optional[ShortURL]:
-    """
-    Pobiera URL na podstawie krótkiego kodu.
+    """Pobiera URL na podstawie krótkiego kodu.
 
     Args:
         db: Sesja bazy danych
@@ -57,8 +55,7 @@ def get_url_by_code(db: Session, short_code: str) -> Optional[ShortURL]:
 
 
 def get_all_urls(db: Session, limit: int = 100) -> List[ShortURL]:
-    """
-    Pobiera wszystkie skrócone URL z bazy danych.
+    """Pobiera wszystkie skrócone URL z bazy danych.
 
     Args:
         db: Sesja bazy danych
@@ -71,8 +68,7 @@ def get_all_urls(db: Session, limit: int = 100) -> List[ShortURL]:
 
 
 def delete_url(db: Session, short_code: str) -> bool:
-    """
-    Usuwa skrócony URL z bazy danych.
+    """Usuwa skrócony URL z bazy danych.
 
     Args:
         db: Sesja bazy danych
@@ -90,8 +86,7 @@ def delete_url(db: Session, short_code: str) -> bool:
 
 
 def increment_click_count(db: Session, short_code: str) -> bool:
-    """
-    Zwiększa licznik kliknięć dla danego URL.
+    """Zwiększa licznik kliknięć dla danego URL.
 
     Args:
         db: Sesja bazy danych
