@@ -19,12 +19,11 @@ def initialize_app() -> None:
 
 
 def get_database_session() -> Session:
-    """
-    Zwraca sesję bazy danych.
+    """Zwraca sesję bazy danych.
 
     Returns:
         Session: Sesja bazy danych SQLAlchemy
-    """
+        """
     return SessionLocal()
 
 
@@ -70,7 +69,7 @@ def main() -> None:
 
                         short_url_obj = create_short_url(db, original_url, custom)
 
-                        st.success(f"✅ URL został skrócony!")
+                        st.success(f"URL został skrócony!")
                         st.code(f"Twój skrócony kod: {short_url_obj.short_code}")
                         st.info(f"💡 Oryginalny URL: {original_url}")
 
@@ -105,7 +104,7 @@ def main() -> None:
     else:
         # Wyszukiwanie
         search_term = st.text_input(
-            "🔍 Szukaj w URL:", placeholder="Wpisz część URL..."
+            "Szukaj w URL:", placeholder="Wpisz część URL..."
         )
 
         if search_term:
