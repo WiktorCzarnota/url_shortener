@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
 authors = [
-    {name = "Student", email = "student@example.com"}
+    {name = "Wiktor Czarnota", email = "127899@student.uksw.edu.pl"}
 ]
 keywords = ["url", "shortener", "streamlit", "web"]
 classifiers = [
